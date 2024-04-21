@@ -60,10 +60,10 @@ def prepare_environment():
 
 
 vae_approx_filenames = [
-    ('xlvaeapp.pth', 'https://huggingface.co/tunguskhan/misc/resolve/main/xlvaeapp.pth'),
-    ('vaeapp_sd15.pth', 'https://huggingface.co/tunguskhan/misc/resolve/main/vaeapp_sd15.pt'),
+    ('xlvaeapp.pth', 'https://huggingface.co/lllyasviel/misc/resolve/main/xlvaeapp.pth'),
+    ('vaeapp_sd15.pth', 'https://huggingface.co/lllyasviel/misc/resolve/main/vaeapp_sd15.pt'),
     ('xl-to-v1_interposer-v3.1.safetensors',
-     'https://huggingface.co/tunguskhan/misc/resolve/main/xl-to-v1_interposer-v3.1.safetensors')
+     'https://huggingface.co/lllyasviel/misc/resolve/main/xl-to-v1_interposer-v3.1.safetensors')
 ]
 
 
@@ -98,7 +98,7 @@ def download_models(default_model, previous_default_models, checkpoint_downloads
         load_file_from_url(url=url, model_dir=config.path_vae_approx, file_name=file_name)
 
     load_file_from_url(
-        url='https://huggingface.co/tunguskhan/misc/resolve/main/emagoediv_expansion.bin',
+        url='https://huggingface.co/lllyasviel/misc/resolve/main/emagoediv_expansion.bin',
         model_dir=config.path_emagoediv_expansion,
         file_name='pytorch_model.bin'
     )
