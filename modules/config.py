@@ -564,7 +564,7 @@ def downloading_inpaint_models(v):
     assert v in modules.flags.inpaint_engine_versions
 
     load_file_from_url(
-        url='https://huggingface.co/lllyasviel/emagoediv_inpaint/resolve/main/emagoediv_inpaint_head.pth',
+        url='https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/fooocus_inpaint_head.pth',
         model_dir=path_inpaint,
         file_name='emagoediv_inpaint_head.pth'
     )
@@ -573,7 +573,7 @@ def downloading_inpaint_models(v):
 
     if v == 'v1':
         load_file_from_url(
-            url='https://huggingface.co/lllyasviel/emagoediv_inpaint/resolve/main/inpaint.emagoediv.patch',
+            url='https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint.fooocus.patch',
             model_dir=path_inpaint,
             file_name='inpaint.emagoediv.patch'
         )
@@ -581,7 +581,7 @@ def downloading_inpaint_models(v):
 
     if v == 'v2.5':
         load_file_from_url(
-            url='https://huggingface.co/lllyasviel/emagoediv_inpaint/resolve/main/inpaint_v25.emagoediv.patch',
+            url='https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v25.fooocus.patch',
             model_dir=path_inpaint,
             file_name='inpaint_v25.emagoediv.patch'
         )
@@ -589,7 +589,7 @@ def downloading_inpaint_models(v):
 
     if v == 'v2.6':
         load_file_from_url(
-            url='https://huggingface.co/lllyasviel/emagoediv_inpaint/resolve/main/inpaint_v26.emagoediv.patch',
+            url='https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v26.fooocus.patch',
             model_dir=path_inpaint,
             file_name='inpaint_v26.emagoediv.patch'
         )
@@ -626,7 +626,7 @@ def downloading_controlnet_canny():
 
 def downloading_controlnet_cpds():
     load_file_from_url(
-        url='https://huggingface.co/lllyasviel/misc/resolve/main/emagoediv_xl_cpds_128.safetensors',
+        url='https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_xl_cpds_128.safetensors',
         model_dir=path_controlnet,
         file_name='emagoediv_xl_cpds_128.safetensors'
     )
@@ -646,7 +646,7 @@ def downloading_ip_adapters(v):
     results += [os.path.join(path_clip_vision, 'clip_vision_vit_h.safetensors')]
 
     load_file_from_url(
-        url='https://huggingface.co/lllyasviel/misc/resolve/main/emagoediv_ip_negative.safetensors',
+        url='https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_ip_negative.safetensors',
         model_dir=path_controlnet,
         file_name='emagoediv_ip_negative.safetensors'
     )
@@ -673,7 +673,7 @@ def downloading_ip_adapters(v):
 
 def downloading_upscale_model():
     load_file_from_url(
-        url='https://huggingface.co/lllyasviel/misc/resolve/main/emagoediv_upscaler_s409985e5.bin',
+        url='https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_upscaler_s409985e5.bin',
         model_dir=path_upscale_models,
         file_name='emagoediv_upscaler_s409985e5.bin'
     )
