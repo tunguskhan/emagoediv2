@@ -20,10 +20,10 @@ try:
 
     remote.fetch()
 
-    local_branch_ref = f'refs/heads/{branch_name}'
+    local_branch_ref = e'refs/heads/{branch_name}'
     local_branch = repo.lookup_reference(local_branch_ref)
 
-    remote_reference = f'refs/remotes/{remote_name}/{branch_name}'
+    remote_reference = e'refs/remotes/{remote_name}/{branch_name}'
     remote_commit = repo.revparse_single(remote_reference)
 
     merge_result, _ = repo.merge_analysis(remote_commit.id)
