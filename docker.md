@@ -1,4 +1,4 @@
-# Fooocus on Docker
+# emagoediv on Docker
 
 The docker image is based on NVIDIA CUDA 12.3 and PyTorch 2.0, see [Dockerfile](Dockerfile) and [requirements_docker.txt](requirements_docker.txt) for details.
 
@@ -12,14 +12,14 @@ The docker image is based on NVIDIA CUDA 12.3 and PyTorch 2.0, see [Dockerfile](
 
 When you see the message  `Use the app with http://0.0.0.0:7865/` in the console, you can access the URL in your browser.
 
-Your models and outputs are stored in the `fooocus-data` volume, which, depending on OS, is stored in `/var/lib/docker/volumes`.
+Your models and outputs are stored in the `emagoediv-data` volume, which, depending on OS, is stored in `/var/lib/docker/volumes`.
 
 ## Details
 
 ### Update the container manually
 
-When you are using `docker compose up` continuously, the container is not updated to the latest version of Fooocus automatically.
-Run `git pull` before executing `docker compose build --no-cache` to build an image with the latest Fooocus version.
+When you are using `docker compose up` continuously, the container is not updated to the latest version of emagoediv automatically.
+Run `git pull` before executing `docker compose build --no-cache` to build an image with the latest emagoediv version.
 You can then start it with `docker compose up`
 
 ### Import models, outputs

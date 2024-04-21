@@ -1,6 +1,6 @@
-from modules.expansion import FooocusExpansion
+from modules.expansion import emagoedivExpansion
 
-expansion = FooocusExpansion()
+expansion = emagoedivExpansion()
 
 text = 'a handsome man'
 

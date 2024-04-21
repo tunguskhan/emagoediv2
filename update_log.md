@@ -1,11 +1,11 @@
-# [2.3.1](https://github.com/lllyasviel/Fooocus/releases/tag/2.3.1)
+# [2.3.1](https://github.com/tungukshan/emagoediv/releases/tag/2.3.1)
 
 * Remove positive prompt from anime prefix to not reset prompt after switching presets
 * Fix image number being reset to 1 when switching preset, now doesn't reset anymore
 * Fix outpainting dimension calculation when extending left/right
 * Fix LoRA compatibility for LoRAs in a1111 metadata scheme
 
-# [2.3.0](https://github.com/lllyasviel/Fooocus/releases/tag/2.3.0)
+# [2.3.0](https://github.com/tungukshan/emagoediv/releases/tag/2.3.0)
 
 * Add performance "lightning" (based on [SDXL-Lightning 4 step LoRA](https://huggingface.co/ByteDance/SDXL-Lightning/blob/main/sdxl_lightning_4step_lora.safetensors))
 * Add preset selection to UI, disable with argument `--disable-preset-selection`. Use `--always-download-new-model` to download missing models on preset switch.
@@ -14,15 +14,15 @@
 * Add support for wildcard subdirectories
 * Add scrollable 2 column layout for styles for better structure
 * Improve Colab resource needs for T4 instances (default), positively tested with all image prompt features
-* Improve anime preset, now uses style `Fooocus Semi Realistic` instead of `Fooocus Negative` (less wet look images)
+* Improve anime preset, now uses style `emagoediv Semi Realistic` instead of `emagoediv Negative` (less wet look images)
 
-# [2.2.1](https://github.com/lllyasviel/Fooocus/releases/tag/2.2.1)
+# [2.2.1](https://github.com/tungukshan/emagoediv/releases/tag/2.2.1)
 
 * Fix some small bugs (e.g. image grid, upscale fast 2x, LoRA weight width in Firefox)
 * Allow prompt weights in array syntax
 * Add steps override and metadata scheme to history log
 
-# [2.2.0](https://github.com/lllyasviel/Fooocus/releases/tag/2.2.0)
+# [2.2.0](https://github.com/tungukshan/emagoediv/releases/tag/2.2.0)
 
 * Isolate every image generation to truly allow multi-user usage
 * Add array support, changes the main prompt when increasing the image number. Syntax: `[[red, green, blue]] flower` 
@@ -30,7 +30,7 @@
 * Now supports native PNG, JPG and WEBP image generation
 * Add Docker support
 
-# [2.1.865](https://github.com/lllyasviel/Fooocus/releases/tag/2.1.865)
+# [2.1.865](https://github.com/tungukshan/emagoediv/releases/tag/2.1.865)
 
 * Various bugfixes
 * Add authentication to --listen
@@ -41,7 +41,7 @@
 
 # 2.1.861 (requested update)
 
-(2023 Dec 21) Hi all, the feature updating of Fooocus will be paused for about two or three weeks because we have some other workloads. See you soon and we will come back in mid or late Jan. However, you may still see updates if other collaborators are fixing bugs or solving problems.
+(2023 Dec 21) Hi all, the feature updating of emagoediv will be paused for about two or three weeks because we have some other workloads. See you soon and we will come back in mid or late Jan. However, you may still see updates if other collaborators are fixing bugs or solving problems.
 
 * Show image preview in Style when mouse hover.
 
@@ -64,7 +64,7 @@
 
 # 2.1.852
 
-* New Log System: Log system now uses tables. If this is breaking some other browser extension or javascript developments, see also [use previous version](https://github.com/lllyasviel/Fooocus/discussions/1405).
+* New Log System: Log system now uses tables. If this is breaking some other browser extension or javascript developments, see also [use previous version](https://github.com/tungukshan/emagoediv/discussions/1405).
 
 # 2.1.846
 
@@ -87,7 +87,7 @@
 * Maintained some computation codes in backend for efficiency.
 * Added a note about Seed Breaking Change.
 
-**Seed Breaking Change**: Note that 2.1.825-2.1.839 is seed breaking change. The computation float point is changed and some seeds may give slightly different results. The minor change in 2.1.825-2.1.839 do not influence image quality. See also [use previous version](https://github.com/lllyasviel/Fooocus/discussions/1405).
+**Seed Breaking Change**: Note that 2.1.825-2.1.839 is seed breaking change. The computation float point is changed and some seeds may give slightly different results. The minor change in 2.1.825-2.1.839 do not influence image quality. See also [use previous version](https://github.com/tungukshan/emagoediv/discussions/1405).
 
 # 2.1.837
 
@@ -125,7 +125,7 @@
 
 # 2.1.823
 
-(2023 Nov 26) Hi all, the feature updating of Fooocus will be paused for about two or three weeks because we have some other workloads. See you soon and we will come back in mid December. However, you may still see updates if other collaborators are fixing bugs or solving problems.
+(2023 Nov 26) Hi all, the feature updating of emagoediv will be paused for about two or three weeks because we have some other workloads. See you soon and we will come back in mid December. However, you may still see updates if other collaborators are fixing bugs or solving problems.
 
 * Fix some potential problem when LoRAs has clip keys and user want to load those LoRAs to refiners.
 
@@ -137,7 +137,7 @@
 
 * New UI for LoRAs.
 * Improved preset system: normalized preset keys and file names.
-* Improved session system: now multiple users can use one Fooocus at the same time without seeing others' results.
+* Improved session system: now multiple users can use one emagoediv at the same time without seeing others' results.
 * Improved some computation related to model precision.
 * Improved config loading system with user-friendly prints.
 
@@ -230,12 +230,12 @@
 
 * Face swap (in line with Midjourney InsightFace): Input Image -> Image Prompt -> Advanced -> FaceSwap
 * The performance is super high. Use it carefully and never use it in any illegal things!
-* This implementation will crop faces for you and you do NOT need to crop faces before feeding images into Fooocus. (If you previously manually crop faces from images for other software, you do not need to do that now in Fooocus.)
+* This implementation will crop faces for you and you do NOT need to crop faces before feeding images into emagoediv. (If you previously manually crop faces from images for other software, you do not need to do that now in emagoediv.)
 
 # 2.1.788
 
 * Fixed some math problems in previous versions.
-* Inpaint engine v2.6 join the beta test of Fooocus inpaint models. Use it in dev tools -> inpaint engine -> v2.6 .
+* Inpaint engine v2.6 join the beta test of emagoediv inpaint models. Use it in dev tools -> inpaint engine -> v2.6 .
 
 # 2.1.785
 
@@ -253,19 +253,19 @@ Now when you load a lora, the following things will happen:
 1. try to load the lora to the base model, if failed (model mismatch), then try to load the lora to refiner.
 2. try to load the lora to refiner, if failed (model mismatch) then do nothing.
 
-In this way, Fooocus 2.1.782 can benefit from all models and loras from CivitAI with both SDXL and SD1.5 ecosystem, using the unique Fooocus swap algorithm, to achieve extremely high quality results (although the default setting is already very high quality), especially in some anime use cases, if users really want to play with all these things.
+In this way, emagoediv 2.1.782 can benefit from all models and loras from CivitAI with both SDXL and SD1.5 ecosystem, using the unique emagoediv swap algorithm, to achieve extremely high quality results (although the default setting is already very high quality), especially in some anime use cases, if users really want to play with all these things.
 
-Recently the community also developed LCM loras. Users can use it by setting the sampler as 'LCM', scheduler as 'sgm_uniform' (Update in 2.1.798: scheduler should also be "lcm"), the forced overwrite of sampling step as 4 to 8, and CFG guidance as 1.0, in dev tools. Do not forget to change the LCM lora weight to 1.0 (many people forget this and report failure cases). Also, set refiner to None. If LCM's feedback in the artists community is good (not the feedback in the programmer community of Stable Diffusion), Fooocus may add some other shortcuts in the future.
+Recently the community also developed LCM loras. Users can use it by setting the sampler as 'LCM', scheduler as 'sgm_uniform' (Update in 2.1.798: scheduler should also be "lcm"), the forced overwrite of sampling step as 4 to 8, and CFG guidance as 1.0, in dev tools. Do not forget to change the LCM lora weight to 1.0 (many people forget this and report failure cases). Also, set refiner to None. If LCM's feedback in the artists community is good (not the feedback in the programmer community of Stable Diffusion), emagoediv may add some other shortcuts in the future.
 
 # 2.1.781
 
-(2023 Oct 26) Hi all, the feature updating of Fooocus will (really, really, this time) be paused for about two or three weeks because we really have some other workloads. Thanks for the passion of you all (and we in fact have kept updating even after last pausing announcement a week ago, because of many great feedbacks)  - see you soon and we will come back in mid November. However, you may still see updates if other collaborators are fixing bugs or solving problems.
+(2023 Oct 26) Hi all, the feature updating of emagoediv will (really, really, this time) be paused for about two or three weeks because we really have some other workloads. Thanks for the passion of you all (and we in fact have kept updating even after last pausing announcement a week ago, because of many great feedbacks)  - see you soon and we will come back in mid November. However, you may still see updates if other collaborators are fixing bugs or solving problems.
 
 * Disable refiner to speed up when new users mistakenly set same model to base and refiner.
 
 # 2.1.779
 
-* Disable image grid by default because many users reports performance issues. For example, https://github.com/lllyasviel/Fooocus/issues/829 and so on. The image grid will cause problem when user hard drive is not super fast, or when user internet connection is not very good (eg, run in remote). The option is moved to dev tools if users want to use it. We will take a look at it later.
+* Disable image grid by default because many users reports performance issues. For example, https://github.com/tungukshan/emagoediv/issues/829 and so on. The image grid will cause problem when user hard drive is not super fast, or when user internet connection is not very good (eg, run in remote). The option is moved to dev tools if users want to use it. We will take a look at it later.
 
 # 2.1.776
 
@@ -283,14 +283,14 @@ Recently the community also developed LCM loras. Users can use it by setting the
 
 Style Updates:
 
-* "Default (Slightly Cinematic)" as renamed to "Fooocus Cinematic".
+* "Default (Slightly Cinematic)" as renamed to "emagoediv Cinematic".
 * "Default (Slightly Cinematic)" is canceled from default style selections. 
-* Added "Fooocus Sharp". This style combines many CivitAI prompts that reduces SDXL blurry and improves sharpness in a relatively natural way.
-* Added "Fooocus Enhance". This style mainly use the very popular [default negative prompts from JuggernautXL](https://civitai.com/models/133005) and some other enhancing words. JuggernautXL's negative prompt has been proved to be very effective in many recent image posts on CivitAI to improve JuggernautXL and many other models.
-* "Fooocus Sharp" and "Fooocus Enhance" and "Fooocus V2" becomes the new default set of styles.
+* Added "emagoediv Sharp". This style combines many CivitAI prompts that reduces SDXL blurry and improves sharpness in a relatively natural way.
+* Added "emagoediv Enhance". This style mainly use the very popular [default negative prompts from JuggernautXL](https://civitai.com/models/133005) and some other enhancing words. JuggernautXL's negative prompt has been proved to be very effective in many recent image posts on CivitAI to improve JuggernautXL and many other models.
+* "emagoediv Sharp" and "emagoediv Enhance" and "emagoediv V2" becomes the new default set of styles.
 * Removed the default text in the "negative prompt" input area since it is not necessary now.
-* You can reproduce previous results by using "Fooocus Cinematic".
-* "Fooocus Sharp" and "Fooocus Enhance" may undergo minor revision in future updates.
+* You can reproduce previous results by using "emagoediv Cinematic".
+* "emagoediv Sharp" and "emagoediv Enhance" may undergo minor revision in future updates.
 
 # 2.1.739
 
@@ -328,7 +328,7 @@ Again, if you do not understand how Positional Encoding works, just do not chang
 
 # 2.1.723
 
-* Improve Fooocus Anime a bit by using better SD1.5 refining formulation.
+* Improve emagoediv Anime a bit by using better SD1.5 refining formulation.
 
 # 2.1.722
 
@@ -408,21 +408,21 @@ Again, if you do not understand how Positional Encoding works, just do not chang
 
 * Improved wildcards implementation (using same wildcard multiple times will now return different values).
 
-**(2023 Oct 18) Again, the feature updating of Fooocus will be paused for about two or three weeks because we have some other workloads - we will come back in early or mid November. However, you may still see updates if other collaborators are fixing bugs or solving problems.**
+**(2023 Oct 18) Again, the feature updating of emagoediv will be paused for about two or three weeks because we have some other workloads - we will come back in early or mid November. However, you may still see updates if other collaborators are fixing bugs or solving problems.**
 
 # 2.1.695 (requested emergency bug fix)
 
 * Reduced 3.4GB RAM use when swapping base model.
 * Reduced 372MB VRAM use in VAE decoding after using control model in image prompt.
-* Note that Official ComfyUI (d44a2de) will run out of VRAM when using sdxl and control-lora on 2060 6GB that does not support float16 at resolution 1024. Fooocus 2.1.695 succeeded in outputting images without OOM using exactly same devices.
+* Note that Official ComfyUI (d44a2de) will run out of VRAM when using sdxl and control-lora on 2060 6GB that does not support float16 at resolution 1024. emagoediv 2.1.695 succeeded in outputting images without OOM using exactly same devices.
 
 (2023 Oct 17) Announcement of update being paused.
 
 # 2.1.693
 
 * Putting custom styles before pre-defined styles.
-* Avoided the consusion between Fooocus Anime preset and Fooocus Anime style (Fooocus Anime style is renamed to Fooocus Masterpiece because it does not make images Anime-looking if not using with Fooocus Anime preset).
-* Fixed some minor bugs in Fooocus Anime preset's prompt emphasizing of commas.
+* Avoided the consusion between emagoediv Anime preset and emagoediv Anime style (emagoediv Anime style is renamed to emagoediv Masterpiece because it does not make images Anime-looking if not using with emagoediv Anime preset).
+* Fixed some minor bugs in emagoediv Anime preset's prompt emphasizing of commas.
 * Supported and documented embedding grammar (and wildcards grammar). 
 * This release is a relative stable version and many features are determined now.
 
@@ -479,7 +479,7 @@ AMD support on Linux and Windows.
 
 ### 2.0.72
 
-(2023 sep 21) The feature updating of Fooocus will be paused for about two or three weeks because we have some events and travelling - we will come back in early or mid October. 
+(2023 sep 21) The feature updating of emagoediv will be paused for about two or three weeks because we have some events and travelling - we will come back in early or mid October. 
 
 ### 2.0.72
 
@@ -496,8 +496,8 @@ AMD support on Linux and Windows.
 ### 2.0.16
 
 * Virtual memory system implemented. Now Colab can run both base model and refiner model with 7.8GB RAM + 5.3GB VRAM, and it never crashes.
-* If you are lucky enough to read this line, keep in mind that ComfyUI cannot do this. This is very reasonable that Fooocus is more optimized because it only need to handle a fixed pipeline, but ComfyUI need to consider arbitrary pipelines. 
-* But if we just consider the optimization of this fixed workload, after 2.0.16, Fooocus has become the most optimized SDXL app, outperforming ComfyUI.
+* If you are lucky enough to read this line, keep in mind that ComfyUI cannot do this. This is very reasonable that emagoediv is more optimized because it only need to handle a fixed pipeline, but ComfyUI need to consider arbitrary pipelines. 
+* But if we just consider the optimization of this fixed workload, after 2.0.16, emagoediv has become the most optimized SDXL app, outperforming ComfyUI.
 
 ### 2.0.0
 
@@ -553,7 +553,7 @@ AMD support on Linux and Windows.
 
 ### 1.0.41
 
-(The update of Fooocus will be paused for a period of time for AUTOMATIC1111 sd-webui 1.6.X, and some features will also be implemented as webui extensions)
+(The update of emagoediv will be paused for a period of time for AUTOMATIC1111 sd-webui 1.6.X, and some features will also be implemented as webui extensions)
 
 ### 1.0.40
 
@@ -578,7 +578,7 @@ AMD support on Linux and Windows.
 
 ### 1.0.32
 
-* Fooocus private log
+* emagoediv private log
 
 ### 1.0.31
 
@@ -636,7 +636,7 @@ AMD support on Linux and Windows.
 
 ### 1.0.16
 
-* Implemented "Fooocus/outputs" folder for saving user results.
+* Implemented "emagoediv/outputs" folder for saving user results.
 * Ignored cv2 errors when preview fails.
 * Mentioned future AMD support in Readme.
 * Created this log.
