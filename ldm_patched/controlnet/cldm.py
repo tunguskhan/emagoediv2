@@ -1,4 +1,4 @@
-#taken from: https://github.com/tunguskhan/ControlNet
+#taken from: https://github.com/lllyasviel/ControlNet
 #and modified
 
 import torch
